@@ -43,7 +43,7 @@ public class Main {
                     int hour = currentTime.get(Calendar.HOUR) - timeLock.get(Calendar.HOUR);
                     int min = currentTime.get(Calendar.MINUTE) - timeLock.get(Calendar.MINUTE);
                     int sec = currentTime.get(Calendar.SECOND) - timeLock.get(Calendar.SECOND);
-                    if (hour == 0 && min == 0 && sec < 10) {
+                    if (hour == 0 && min == 0 && sec < 100) {
                         System.out.println("Time out!");
                         throw new AccountIsLockedException("Err", timeLock);
                     }
