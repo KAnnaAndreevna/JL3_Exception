@@ -60,15 +60,15 @@ public class Main {
         }
 
         //Логика по выдаче наличных - вынести в отдельный класс
-        boolean withdrawalСash = false;
-        while (!withdrawalСash){
+        boolean withdrawalCash = false;
+        while (!withdrawalCash){
             System.out.print("Please enter amount : ");
             if (Integer.parseInt(reader.readLine()) % 100 == 0) {
                 System.out.println("The amount is a multiple of 100");
                 //Запросить остаток в банкомате
 
-                // В зависимости от остатка делать withdrawalСash
-                withdrawalСash = true;
+                // В зависимости от остатка делать withdrawalCash
+                withdrawalCash = true;
             } else {
                 System.out.println("The amount is not a multiple of 100");
 
